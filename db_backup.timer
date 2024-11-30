@@ -1,0 +1,9 @@
+[Unit]
+Description=Temporizador para ejecutar db_backup.service diariamente a las 12:26
+
+[Timer]
+OnCalendar=*-*-* 12:26:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=Servicio para realizar copia de seguridad diaria de la base de datos
+After=network.target
+
+[Service]
+Type=oneshot
+Environment="DIRECTORIO_BACKUP=/backup/db/"
+ExecStart=/etc/scripts/autobackup_DB.sh YOUR_DB_NAME
