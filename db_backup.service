@@ -5,4 +5,4 @@ After=network.target
 [Service]
 Type=oneshot
 Environment="DIRECTORIO_BACKUP=/backup/db/"
-ExecStart=/etc/scripts/autobackup_DB.sh YOUR_DB_NAME
+ExecStart=/etc/scripts/autobackup_DB.sh
