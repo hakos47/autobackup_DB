@@ -34,8 +34,8 @@ This script automates the backup process for your MySQL database on Linux system
 3. **Enable and Start the Timer:**
 
     ```bash
-       sudo systemctl enable autobackup.timer
-       sudo systemctl start autobackup.timer
+       sudo systemctl enable db_backup.timer
+       sudo systemctl start db_backup.timer
     ```    
 
 # Acknowledgements
